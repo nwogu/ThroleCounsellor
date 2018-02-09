@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Users"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:id="@+id/wallpaper"
+        android:src="@drawable/lekkilake"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="179dp"
+            android:background="@android:color/black"
+            android:alpha="0.5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:padding="16dp"
+            android:layout_alignBottom="@id/wallpaper"
+            android:textStyle="bold|italic"
+            android:text="MESSAGES FROM THROLE USERS WILL APPEAR HERE"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No user has messaged you"
+        android:padding="16dp"
+        android:id="@+id/noUsersText"
+        android:visibility="gone"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usersList"/>
+</LinearLayout>
